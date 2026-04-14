@@ -37,6 +37,27 @@ table {
 }
 </style>
 
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: auto; /* center */
+  background: white;
+  padding: 25px;
+  border: 1px solid #ddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+@media (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
 <body>
 
 <div class="wrapper">
@@ -273,24 +294,3 @@ Thank You </p>
 </div>
 
 </body>
-
-.wrapper {
-  width: 100%;
-  max-width: 900px;
-  margin: auto; /* center */
-  background: white;
-  padding: 25px;
-  border: 1px solid #ddd;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-@media (max-width: 600px) {
-  table {
-    display: block;
-    overflow-x: auto;
-  }
-}
