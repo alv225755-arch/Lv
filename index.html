@@ -93,19 +93,7 @@ html {
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
 }
-body {
-  margin: 0;
-  padding: 0;
-  background: #f2f2f2;
-}
 
-.container {
-  width: 100%;
-  max-width: 900px;
-  margin: auto;
-  padding: 10px;
-  background: #ffffff;
-}
 </style>
 
 
@@ -113,275 +101,119 @@ body {
 
 <div class="wrapper">
 
-       <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-
-
-
-
-  
-  
-  
-  
-  <meta charset="UTF-8">
-
-
-
-
-  
-  
-  
-  
-  <title>Invoice</title>
+  <!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Hello</title>
 </head>
+<body style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width:900px;background:#ffffff;border:1px solid #e0e6ed;border-radius:8px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,0.08);margin-top:30px;" width="100%"><!-- Header -->
+	<tbody>
+		<tr style="background:#003087;">
+			<td style="padding:24px;">
+			<table role="presentation" width="100%">
+				<tbody>
+					<tr>
+						<td style="font-size:26px;font-weight:bold;color:#ffffff;">Pay<span style="color:#009cde;">Pal</span> × <span style="color:#ffffff;">Coinbase</span></td>
+						<td align="right" style="font-size:12px;color:#ffffff;">
+						<div>#td_date</div>
+
+						<div>Transaction ID: <a href="#" style="color:#ffffff;text-decoration:underline;">#tr_no</a></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Greeting -->
+		<tr>
+			<td style="padding:24px;">
+			<div style="font-size:15px;color:#222;">Hello, <a href="#" style="color:#1652f0;text-decoration:none;">#cx_email</a></div>
+
+			<div style="margin-top:12px;font-size:16px;color:#222;font-weight:bold;">Thank you for your Bitcoin purchase from Coinbase, paid securely with PayPal.</div>
+
+			<div style="margin-top:10px;font-size:13px;color:#555;">Below are the details of your transaction. Please keep this invoice for your records.</div>
+			</td>
+		</tr>
+		<!-- Purchase Details -->
+		<tr>
+			<td style="padding:24px;">
+			<table border="0" cellpadding="0" cellspacing="0" style="border:1px solid #d9e1ea;border-radius:6px;" width="100%">
+				<tbody>
+					<tr style="background:#f4f6f9;">
+						<th align="left" style="padding:14px;font-size:14px;color:#333;">Description</th>
+						<th align="center" style="padding:14px;font-size:14px;color:#333;">Details</th>
+						<th align="right" style="padding:14px;font-size:14px;color:#333;">Amount</th>
+					</tr>
+					<tr>
+						<td style="padding:14px;font-size:13px;color:#222;">Bitcoin Purchase<br />
+						<span style="font-size:12px;color:#6b778c;">Purchased via PayPal Wallet • Reference: #PPBC9384</span></td>
+						<td align="center" style="padding:14px;font-size:13px;">0.015 BTC</td>
+						<td align="right" style="padding:14px;font-size:13px;">£449.99 GBP</td>
+					</tr>
+					<tr>
+						<td style="padding:14px;font-size:13px;color:#222;">Network Fee<br />
+						<span style="font-size:12px;color:#6b778c;">Bitcoin blockchain fee</span></td>
+						<td align="center" style="padding:14px;font-size:13px;">—</td>
+						<td align="right" style="padding:14px;font-size:13px;">£2.50 GBP</td>
+					</tr>
+					<tr>
+						<td style="padding:14px;font-size:13px;color:#222;">Coinbase Service Fee<br />
+						<span style="font-size:12px;color:#6b778c;">Secure processing & instant settlement</span></td>
+						<td align="center" style="padding:14px;font-size:13px;">—</td>
+						<td align="right" style="padding:14px;font-size:13px;">£4.99 GBP</td>
+					</tr>
+					<tr style="background:#f4f6f9;">
+						<td colspan="2" style="padding:14px;font-size:14px;font-weight:bold;">Total Paid (via PayPal)</td>
+						<td align="right" style="padding:14px;font-size:14px;font-weight:bold;">£457.48 GBP</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Wallet & Payment Info -->
+		<tr>
+			<td style="padding:24px;">
+			<div style="font-size:14px;color:#222;font-weight:bold;">Wallet & Payment Information</div>
+
+			<div style="font-size:13px;color:#555;margin-top:6px;">• Wallet ID: <strong>#p_key</strong><br />
+			• Status: <span style="color:#34a853;font-weight:bold;">Confirmed</span><br />
+			• Settlement Time: Instant<br />
+			• Payment Method: PayPal Balance<br />
+			• Receipt ID: <strong>#inv_long</strong></div>
+			</td>
+		</tr>
+		<!-- Help Section -->
+		<tr>
+			<td style="padding:24px;">
+			<div style="font-size:14px;color:#222;font-weight:bold;">Need Help or Want to Cancel?</div>
+
+			<div style="font-size:13px;color:#555;margin-top:6px;">If you wish to cancel this purchase and request a refund, please contact our support helpline within <strong>24 hours</strong>.</div>
+
+			<div style="margin-top:12px;font-size:20px;font-weight:bold;"><a href="tel:+448082345678" style="color:#1652f0;text-decoration:none;">+44 (0)808 234 5678</a></div>
+			</td>
+		</tr>
+		<!-- Footer -->
+		<tr style="background:#f4f6f9;">
+			<td style="padding:20px 24px;font-size:11px;color:#6b778c;line-height:1.5;"><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong><br />
+			Registered Office: 22-24 Boulevard Royal, L-2449, Luxembourg. Authorised by the CSSF.<br />
+			<br />
+			<strong>Coinbase UK, Ltd</strong><br />
+			Registered in England & Wales (Company No. 09083955). Registered Office: 1 Fore Street Avenue, London, EC2Y 9DT.<br />
+			Authorised and regulated by the Financial Conduct Authority (FCA).<br />
+			<br />
+			© 2025 PayPal × Coinbase. All rights reserved.</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+</body>
+</html>
 
+</div>
 
-<body style="padding: 40px; background-color: rgb(243, 246, 249); font-family: Arial,sans-serif;">
-
-
-
-
-<table style="border: 1px solid rgb(224, 224, 224); padding: 30px; background-color: rgb(255, 255, 255); max-width: 210mm;" align="center" cellpadding="0" cellspacing="0" width="100%">
-
-
-
-
-<!-- Header with Logo -->
-  <tbody>
-
-
-
-
-    <tr>
-
-
-
-
-      <td colspan="2" style="text-align: left; padding-bottom: 20px;">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOMAAACUCAMAAABWd24HAAAAe1BMVEUAOr3///8AELfHzOsAIrmPnNkANLwAL7sAJrn8/P6GkdVPXMXs7viZnNkALLpidcxecMuZpNuEjNTx8/p3gtAAGLe3vOXg4/QiRcC5wObZ3PGUodsABLU7TMGwueRAWMQ1UsMmScCPl9jP0+01QL5yes5VY8dVaMmkqt7WgN+8AAAC2UlEQVR4nO3dbXOiMBSG4SA0ILKgUnwDcatd2///C9sVnZWxOyaHE4jxuT9nJNc4WGc4jcIzUTINhX5ylxjZjTDyqkTj76WR3cBIjWh8g5GaVcYVjNRsMgoBIzWrjPIJjOHGyG6sMqZPYIyewBg8gbGAkRqM1IjGkWHjOPHL/Uvn9n4HYzrvvoFLZX1Ixm3jciargKGq7GAUEccWzhWV2G+ujYdJQNrUTcGsi5E3GWz9f8aD4NqTTcbvL4fv+cWYFJLrVe0yijS+GHd8O7LMKCd5Y/SZ7sW/WWYUb35j/MO4IduMoj4Z8wnb3WifMS1PxuXOYWP062RMXH4fYaQFY//BSAvG/oORFoz9ByMtGPsPRlow9h+MtGDsPxhpwdh/OkYZqjXqZAwjnVSuoWGU22yq1LHuYAyn8Vy9WOUiGsZonidq5R2MRT3WyFsUvMb4v0/bf4pqXGhdZa1gDB7dWMm7FQ9u3JSzu5X+YxtVg7F3o87nqurHr11GOcm4m9aWGYVMuRvZ9rlqIOu+AxgIxvZSGGEcMhjbS2GEcchgbC+FEcYhg7G9FEYYhwzG9lIYYRwyGNtLYYRxyAwaj4XW9AIt5pkHTWP+OY/NlzHPPOgZPQPP2G4fuqnMAxg09hKMpo15rTCOcNuL3lkWwxqTaXB/rOS2av1Ixiy9f/nbimcwLnKd6mHvR5ox/HjV6UNhXlPDmGYHX73D+tjHzIPK2K3W/KpeJKGJTMwh2xaMbgSjG8HoRjC6EYxuBKMbwehGMLoRjG4EoxvB6EZnI+v5q7aVzppzdK0ZUDBR8/+PXh0NvRFjye3mfK71ytk3Ms28s3GZOopM35OL0VtvGY/vtqaw2F2dpe9t4qgqRmwpPPz8sYhvC99NPpvfkrr87sM48dcaTxjvtFjRiHu+Lfh+czzKlZG35Yr0J9fcGQgGghFG/mCkBiOM/MFIDUYY+YORGoww8gcjNbuMX03Hni6g8Mp3AAAAAElFTkSuQmCC" alt="Company Logo" style="max-width: 100px; height: auto;"></td>
-
-
-
-
-    </tr>
-
-
-
-
-<!-- Title -->
-    <tr>
-
-
-
-
-      <td colspan="2" style="text-align: center; padding-bottom: 20px;">
-      
-      
-      
-      
-      <h2 style="margin: 0pt; font-size: 36px; color: rgb(44, 62, 80);">INVOICE</h2>
-
-
-
-
-      
-      
-      
-      
-      <p style="margin: 5px 0pt; font-size: 18px; color: rgb(127, 140, 141);">Product
-Shipment Confirmed</p>
-
-
-
-
-      </td>
-
-
-
-
-    </tr>
-
-
-
-
-<!-- Invoice Info -->
-    <tr>
-
-
-
-
-      <td style="width: 50%; vertical-align: top;">
-      
-      
-      
-      
-      <table style="font-size: 18px; color: rgb(45, 52, 54);" cellpadding="8" cellspacing="0" width="100%">
-
-
-
-
-        <tbody>
-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" alt="iPhone 17 Pro Max" style="border: 1px solid rgb(221, 221, 221); width: 100px; height: auto;"></td>
-
-
-
-
-            <td style="vertical-align: top;">
-            <strong style="font-size: 20px;">Apple iPhone
-17 Pro Max &ndash; 512GB (Cosmic Orange)</strong>
-            
-            
-            
-            
-            <p style="margin-top: 10px; color: rgb(99, 110, 114);">Includes
-1-year warranty, original accessories, and priority delivery service
-(3-5 business days).</p>
-
-
-
-
-            </td>
-
-
-
-
-          </tr>
-
-
-
-
-        
-        
-        </tbody>
-      
-      
-      
-      
-      </table>
-
-
-
-
-      </td>
-
-
-
-
-    </tr>
-
-
-
-
-<!-- Charges Table -->
-    <tr>
-
-
-
-
-      <td colspan="2" style="padding-top: 20px;">
-      
-      
-      
-      
-      <table style="font-size: 18px; border-collapse: collapse;" cellpadding="10" cellspacing="0" width="100%">
-
-
-
-
-        <thead>
-        <tr style="background-color: rgb(240, 240, 240); color: rgb(44, 62, 80);">
-
-
-
-
-          <th align="left">Item</th>
-
-
-
-
-          <th align="right">Unit Price</th>
-
-
-
-
-          <th align="right">Quantity</th>
-
-
-
-
-          <th align="right">Total</th>
-
-
-
-
-        </tr>
-
-
-
-
-        </thead>
-        <tbody>
-
-
-
-
-          <tr>
-
-
-
-
-            <td>iPhone 17 Pro Max &ndash; 512GB</td>
-
-
-
-
-            <td align="right">&yen;11,#high_amount.00</td>
-
-
-
-
-            <td align="right">1</td>
-
-
-
-
-            <td align="right">&yen;11,#high_amount.00</td>
-
-
-
-
-          </tr>
-
-
-
-
-          <tr>
-
-
-
-
-            <td>Priority Delivery Fee</td>
-
-
-
-
-            <td align="right">&yen;00.00</td>
-
-
-
-
-            <td align="right">1</td>
-
-
-
-
-            <td align="right">&yen;00.00</td>
-
-
-
-
-          </tr>
+</body>         </tr>
 
 
 
