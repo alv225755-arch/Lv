@@ -100,117 +100,130 @@ html {
 <body>
 
 <div class="wrapper">
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Hello</title>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>This</title>
+	<style type="text/css">body { margin:0; padding:0; background:#f4f6f9; font-family: Arial, Helvetica, sans-serif; }
+    .container { width:100%; padding:40px 0; background:#f4f6f9; }
+    .wrapper { width:90%; max-width:1000px; margin:0 auto; background:#fff; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.1); overflow:hidden; }
+    .header { background:#0070ba; padding:28px; color:#fff; display:flex; align-items:center; justify-content:space-between; }
+    .header h1 { margin:0; font-size:32px; }
+    .logo { font-size:28px; font-weight:bold; color:#fff; }
+    .content { padding:40px; }
+    .title { font-size:30px; font-weight:600; color:#333; margin-bottom:8px; }
+    .subtitle { font-size:15px; color:#666; margin-bottom:28px; }
+    .details { margin-bottom:36px; }
+    .details td { padding:8px 0; font-size:15px; color:#444; }
+    .amount-box { background:#f1f8ff; padding:16px 22px; border-radius:8px; font-weight:bold; font-size:20px; color:#0070ba; }
+    table.invoice { width:100%; border-collapse:collapse; margin-top:20px; }
+    table.invoice th { text-align:left; padding:14px; background:#f4f6f9; font-size:14px; color:#333; }
+    table.invoice td { padding:14px; border-bottom:1px solid #eee; font-size:15px; color:#444; vertical-align:top; }
+    .description { font-size:13px; color:#555; margin-top:6px; line-height:1.4; }
+    table.totals { width:100%; margin-top:24px; }
+    table.totals td { padding:8px 0; font-size:15px; color:#333; }
+    table.totals tr.total td { font-weight:bold; font-size:18px; border-top:2px solid #0070ba; padding-top:12px; }
+    .helpline { margin-top:30px; font-size:14px; color:#333; background:#f9f9f9; padding:16px; border-radius:8px; line-height:1.5; }
+    .footer { background:#f4f6f9; padding:24px 40px; font-size:12px; color:#666; text-align:center; }
+    .footer strong { color:#333; }
+    @media only screen and (max-width:900px){
+      .wrapper { width:100% !important; border-radius:0; }
+      .content { padding:20px; }
+    }
+	</style>
 </head>
-<body style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;">
-<center>
-<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width:900px;background:#ffffff;border:1px solid #e0e6ed;border-radius:8px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,0.08);margin-top:30px;" width="100%"><!-- Header -->
+<body>
+<div class="container">
+<div class="wrapper">
+<div class="header">
+<div class="logo">PayPal</div>
+
+<h1>Invoice</h1>
+</div>
+
+<div class="content">
+<div class="title">Coinbase Bitcoin Purchase</div>
+
+<div class="subtitle">This transaction has been successfully completed. No further action is required unless you wish to cancel or request a refund.</div>
+
+<table class="details">
 	<tbody>
-		<tr style="background:#003087;">
-			<td style="padding:24px;">
-			<table role="presentation" width="100%">
-				<tbody>
-					<tr>
-						<td style="font-size:26px;font-weight:bold;color:#ffffff;">Pay<span style="color:#009cde;">Pal</span> × <span style="color:#ffffff;">Coinbase</span></td>
-						<td align="right" style="font-size:12px;color:#ffffff;">
-						<div>#td_date</div>
-
-						<div>Transaction ID: <a href="#" style="color:#ffffff;text-decoration:underline;">#tr_no</a></div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</td>
-		</tr>
-		<!-- Greeting -->
 		<tr>
-			<td style="padding:24px;">
-			<div style="font-size:15px;color:#222;">Hello, <a href="#" style="color:#1652f0;text-decoration:none;">#cx_email</a></div>
-
-			<div style="margin-top:12px;font-size:16px;color:#222;font-weight:bold;">Thank you for your Bitcoin purchase from Coinbase, paid securely with PayPal.</div>
-
-			<div style="margin-top:10px;font-size:13px;color:#555;">Below are the details of your transaction. Please keep this invoice for your records.</div>
-			</td>
+			<td><strong>Date:</strong></td>
+			<td>#td_date</td>
 		</tr>
-		<!-- Purchase Details -->
 		<tr>
-			<td style="padding:24px;">
-			<table border="0" cellpadding="0" cellspacing="0" style="border:1px solid #d9e1ea;border-radius:6px;" width="100%">
-				<tbody>
-					<tr style="background:#f4f6f9;">
-						<th align="left" style="padding:14px;font-size:14px;color:#333;">Description</th>
-						<th align="center" style="padding:14px;font-size:14px;color:#333;">Details</th>
-						<th align="right" style="padding:14px;font-size:14px;color:#333;">Amount</th>
-					</tr>
-					<tr>
-						<td style="padding:14px;font-size:13px;color:#222;">Bitcoin Purchase<br />
-						<span style="font-size:12px;color:#6b778c;">Purchased via PayPal Wallet • Reference: #PPBC9384</span></td>
-						<td align="center" style="padding:14px;font-size:13px;">0.015 BTC</td>
-						<td align="right" style="padding:14px;font-size:13px;">£449.99 GBP</td>
-					</tr>
-					<tr>
-						<td style="padding:14px;font-size:13px;color:#222;">Network Fee<br />
-						<span style="font-size:12px;color:#6b778c;">Bitcoin blockchain fee</span></td>
-						<td align="center" style="padding:14px;font-size:13px;">—</td>
-						<td align="right" style="padding:14px;font-size:13px;">£2.50 GBP</td>
-					</tr>
-					<tr>
-						<td style="padding:14px;font-size:13px;color:#222;">Coinbase Service Fee<br />
-						<span style="font-size:12px;color:#6b778c;">Secure processing & instant settlement</span></td>
-						<td align="center" style="padding:14px;font-size:13px;">—</td>
-						<td align="right" style="padding:14px;font-size:13px;">£4.99 GBP</td>
-					</tr>
-					<tr style="background:#f4f6f9;">
-						<td colspan="2" style="padding:14px;font-size:14px;font-weight:bold;">Total Paid (via PayPal)</td>
-						<td align="right" style="padding:14px;font-size:14px;font-weight:bold;">£457.48 GBP</td>
-					</tr>
-				</tbody>
-			</table>
-			</td>
+			<td><strong>Invoice ID:</strong></td>
+			<td>#inv_long</td>
 		</tr>
-		<!-- Wallet & Payment Info -->
 		<tr>
-			<td style="padding:24px;">
-			<div style="font-size:14px;color:#222;font-weight:bold;">Wallet & Payment Information</div>
-
-			<div style="font-size:13px;color:#555;margin-top:6px;">• Wallet ID: <strong>#p_key</strong><br />
-			• Status: <span style="color:#34a853;font-weight:bold;">Confirmed</span><br />
-			• Settlement Time: Instant<br />
-			• Payment Method: PayPal Balance<br />
-			• Receipt ID: <strong>#inv_long</strong></div>
-			</td>
+			<td><strong>Payment Status:</strong></td>
+			<td>Completed</td>
 		</tr>
-		<!-- Help Section -->
 		<tr>
-			<td style="padding:24px;">
-			<div style="font-size:14px;color:#222;font-weight:bold;">Need Help or Want to Cancel?</div>
-
-			<div style="font-size:13px;color:#555;margin-top:6px;">If you wish to cancel this purchase and request a refund, please contact our support helpline within <strong>24 hours</strong>.</div>
-
-			<div style="margin-top:12px;font-size:20px;font-weight:bold;"><a href="tel:+448082345678" style="color:#1652f0;text-decoration:none;">+44 (0)808 234 5678</a></div>
-			</td>
-		</tr>
-		<!-- Footer -->
-		<tr style="background:#f4f6f9;">
-			<td style="padding:20px 24px;font-size:11px;color:#6b778c;line-height:1.5;"><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong><br />
-			Registered Office: 22-24 Boulevard Royal, L-2449, Luxembourg. Authorised by the CSSF.<br />
-			<br />
-			<strong>Coinbase UK, Ltd</strong><br />
-			Registered in England & Wales (Company No. 09083955). Registered Office: 1 Fore Street Avenue, London, EC2Y 9DT.<br />
-			Authorised and regulated by the Financial Conduct Authority (FCA).<br />
-			<br />
-			© 2025 PayPal × Coinbase. All rights reserved.</td>
+			<td><strong>Amount Paid:</strong></td>
+			<td><span class="amount-box">£2,850.00</span></td>
 		</tr>
 	</tbody>
 </table>
-</center>
-</body>
-</html>
 
+<table class="invoice">
+	<tbody>
+		<tr>
+			<th>Item</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Amount</th>
+		</tr>
+		<tr>
+			<td>Bitcoin Purchase via Coinbase
+			<div class="description">• Wallet Address: BTC-0x93F..21a<br />
+			• Transaction Hash: #p_key<br />
+			• Purchase Method: Linked UK Bank (Faster Payments)<br />
+			• Instant settlement to your Coinbase Wallet<br />
+			• Network Fee: Covered by Coinbase at time of purchase</div>
+			</td>
+			<td>0.10 BTC</td>
+			<td>£28,500.00 / BTC</td>
+			<td>£2,850.00</td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="totals">
+	<tbody>
+		<tr>
+			<td style="width:75%; text-align:right;">Subtotal:</td>
+			<td style="text-align:right;">£2,850.00</td>
+		</tr>
+		<tr>
+			<td style="width:75%; text-align:right;">Fees:</td>
+			<td style="text-align:right;">£0.00</td>
+		</tr>
+		<tr class="total">
+			<td style="width:75%; text-align:right;">Total:</td>
+			<td style="text-align:right;">£2,850.00</td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="helpline"><strong>Need to Cancel or Request a Refund?</strong><br />
+If you would like to cancel this transaction or request a refund, please contact our 24/7 helpline:<br />
+<strong>PayPal UK Refund & Cancellation Support: +44 800 123 4567</strong></div>
 </div>
 
-				</body>
+<div class="footer">
+<p><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong><br />
+22-24 Boulevard Royal, L-2449 Luxembourg<br />
+Registered Office in the UK: PayPal (UK) Ltd, 1 Angel Court, London EC2R 7HJ, United Kingdom<br />
+FCA Regulated No: 900001</p>
+
+<p>For any issues related to this invoice or your Coinbase Bitcoin purchase, please contact PayPal UK Support.</p>
+</div>
+</div>
+</div>
+</body>
+</html>
+</div>
+
+</body>
