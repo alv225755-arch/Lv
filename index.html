@@ -106,112 +106,240 @@ input, select, textarea {
   }
 }
 </style>
-<!DOCTYPE html>
-<html lang="en">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Hello</title>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+ content="width=device-width, initial-scale=1.0">
+  <title>bill</title>
+  <style type="text/css">
+body {
+font-family: Arial, sans-serif;
+background-color: #f9f6f4;
+margin: 0;
+padding: 0;
+}
+.header {
+max-width: 210mm;
+width: 100%;
+margin: 10px auto;
+background-color: #ffffff;
+border-collapse: collapse;
+padding: 20px;
+}
+  </style>
 </head>
-<body style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;">
-<center>
-<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width:900px;background:#ffffff;border:1px solid #e0e6ed;border-radius:8px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,0.08);margin-top:30px;" width="100%"><!-- Header -->
-	<tbody>
-		<tr style="background:#003087;">
-			<td style="padding:24px;">
-			<table role="presentation" width="100%">
-				<tbody>
-					<tr>
-						<td style="font-size:26px;font-weight:bold;color:#ffffff;">Pay<span style="color:#009cde;">Pal</span> × <span style="color:#ffffff;">Coinbase</span></td>
-						<td align="right" style="font-size:12px;color:#ffffff;">
-						<div>#td_date</div>
-
-						<div>Transaction ID: <a href="#" style="color:#ffffff;text-decoration:underline;">#tr_no</a></div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-			</td>
-		</tr>
-		<!-- Greeting -->
-		<tr>
-			<td style="padding:24px;">
-			<div style="font-size:15px;color:#222;">Hello, <a href="#" style="color:#1652f0;text-decoration:none;">#cx_email</a></div>
-
-			<div style="margin-top:12px;font-size:16px;color:#222;font-weight:bold;">Thank you for your Bitcoin purchase from Coinbase, paid securely with PayPal.</div>
-
-			<div style="margin-top:10px;font-size:13px;color:#555;">Below are the details of your transaction. Please keep this invoice for your records.</div>
-			</td>
-		</tr>
-		<!-- Purchase Details -->
-		<tr>
-			<td style="padding:24px;">
-			<table border="0" cellpadding="0" cellspacing="0" style="border:1px solid #d9e1ea;border-radius:6px;" width="100%">
-				<tbody>
-					<tr style="background:#f4f6f9;">
-						<th align="left" style="padding:14px;font-size:14px;color:#333;">Description</th>
-						<th align="center" style="padding:14px;font-size:14px;color:#333;">Details</th>
-						<th align="right" style="padding:14px;font-size:14px;color:#333;">Amount</th>
-					</tr>
-					<tr>
-						<td style="padding:14px;font-size:13px;color:#222;">Bitcoin Purchase<br />
-						<span style="font-size:12px;color:#6b778c;">Purchased via PayPal Wallet • Reference: #PPBC9384</span></td>
-						<td align="center" style="padding:14px;font-size:13px;">0.015 BTC</td>
-						<td align="right" style="padding:14px;font-size:13px;">£449.99 GBP</td>
-					</tr>
-					<tr>
-						<td style="padding:14px;font-size:13px;color:#222;">Network Fee<br />
-						<span style="font-size:12px;color:#6b778c;">Bitcoin blockchain fee</span></td>
-						<td align="center" style="padding:14px;font-size:13px;">—</td>
-						<td align="right" style="padding:14px;font-size:13px;">£2.50 GBP</td>
-					</tr>
-					<tr>
-						<td style="padding:14px;font-size:13px;color:#222;">Coinbase Service Fee<br />
-						<span style="font-size:12px;color:#6b778c;">Secure processing & instant settlement</span></td>
-						<td align="center" style="padding:14px;font-size:13px;">—</td>
-						<td align="right" style="padding:14px;font-size:13px;">£4.99 GBP</td>
-					</tr>
-					<tr style="background:#f4f6f9;">
-						<td colspan="2" style="padding:14px;font-size:14px;font-weight:bold;">Total Paid (via PayPal)</td>
-						<td align="right" style="padding:14px;font-size:14px;font-weight:bold;">£457.48 GBP</td>
-					</tr>
-				</tbody>
-			</table>
-			</td>
-		</tr>
-		<!-- Wallet & Payment Info -->
-		<tr>
-			<td style="padding:24px;">
-			<div style="font-size:14px;color:#222;font-weight:bold;">Wallet & Payment Information</div>
-
-			<div style="font-size:13px;color:#555;margin-top:6px;">• Wallet ID: <strong>#p_key</strong><br />
-			• Status: <span style="color:#34a853;font-weight:bold;">Confirmed</span><br />
-			• Settlement Time: Instant<br />
-			• Payment Method: PayPal Balance<br />
-			• Receipt ID: <strong>#inv_long</strong></div>
-			</td>
-		</tr>
-		<!-- Help Section -->
-		<tr>
-			<td style="padding:24px;">
-			<div style="font-size:14px;color:#222;font-weight:bold;">Need Help or Want to Cancel?</div>
-
-			<div style="font-size:13px;color:#555;margin-top:6px;">If you wish to cancel this purchase and request a refund, please contact our support helpline within <strong>24 hours</strong>.</div>
-
-			<div style="margin-top:12px;font-size:20px;font-weight:bold;"><a href="tel:+448082345678" style="color:#1652f0;text-decoration:none;">+44 (0)808 234 5678</a></div>
-			</td>
-		</tr>
-		<!-- Footer -->
-		<tr style="background:#f4f6f9;">
-			<td style="padding:20px 24px;font-size:11px;color:#6b778c;line-height:1.5;"><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong><br />
-			Registered Office: 22-24 Boulevard Royal, L-2449, Luxembourg. Authorised by the CSSF.<br />
-			<br />
-			<strong>Coinbase UK, Ltd</strong><br />
-			Registered in England & Wales (Company No. 09083955). Registered Office: 1 Fore Street Avenue, London, EC2Y 9DT.<br />
-			Authorised and regulated by the Financial Conduct Authority (FCA).<br />
-			<br />
-			© 2025 PayPal × Coinbase. All rights reserved.</td>
-		</tr>
-	</tbody>
+<body>
+<div class="header">
+<table
+ style="border-top: 1px solid rgb(221, 221, 221); border-bottom: 1px solid rgb(221, 221, 221); background: rgb(249, 247, 244) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; border-collapse: collapse; width: 794px; height: 62px;">
+  <tbody>
+    <tr>
+      <td style="padding: 10px;"> <img
+ src="data:image/png;base64,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"
+ alt="Company Logo" style="height: 40px;"></td>
+      <td
+ style="padding: 10px; font-size: 24px; font-weight: bold; text-align: left;">Invoice:
+##rnd_no </td>
+      <td style="padding: 10px; text-align: center;"> <svg
+ width="24" height="24" viewbox="0 0 24 24"
+ fill="none" xmlns="http://www.w3.org/2000/svg"
+ style="vertical-align: middle;"><circle cx="12"
+ cy="8" r="4" stroke="#333" stroke-width="2"
+ fill="none"></circle><path
+ d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="#333"
+ stroke-width="2" fill="none" stroke-linecap="round"></path>&nbsp;</svg><span
+ style="font-size: 14px; font-weight: bold; color: rgb(51, 51, 51); margin-left: 5px; vertical-align: middle;"></span>
+      <span style="margin: 0pt 10px; color: rgb(204, 204, 204);">|</span><strong>#day_date_td</strong></td>
+    </tr>
+  </tbody>
 </table>
-</center>
+<table
+ style="border: 1px solid rgb(221, 221, 221); background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-family: Arial,sans-serif; border-collapse: collapse; width: 100%;">
+<!-- Greeting & Customer Info --> <tbody>
+    <tr>
+      <td colspan="2"
+ style="padding: 16px; font-size: 16px; color: rgb(51, 51, 51); text-align: left;">
+      <strong>Dear #cx_email,</strong><br>
+      <br>
+Thank you for choosing TRX chain for your
+cryptocurrency transactions. Your trust and financial security are
+extremely important to us.<br>
+      <br>
+      <strong><span style="font-weight: normal;">Email
+Associated with Your TRX Account:</span> </strong><span
+ style="font-weight: bold;">
+#rand_number_mix#Randomized_Alpha_Generate</span><span
+ style="font-size: 22px;"><strong> </strong></span></td>
+    </tr>
+<!-- Manage Crypto CTA --> <tr>
+      <td colspan="2"
+ style="border-top: 2px solid rgb(221, 221, 221); padding: 16px; background: rgb(247, 247, 247) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: left;">
+      <span style="font-size: 14px; color: rgb(51, 51, 51);">Take
+control of your digital assets with <strong>secure, real-time
+cryptocurrency tracking and
+account
+management&mdash;right from your TRX dashboard.</strong> </span><br>
+      <br>
+      <a href="#"
+ style="padding: 12px 24px; background: rgb(0, 112, 186) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; color: white; text-decoration: none; font-size: 14px; font-weight: bold;">Manage
+Your Crypto </a></td>
+    </tr>
+<!-- Trusted Security Icons --> <tr>
+      <td colspan="2" style="padding: 16px; text-align: left;">
+      <span style="margin-right: 20px;"><svg width="30"
+ height="30" viewbox="0 0 24 24" fill="none"
+ xmlns="http://www.w3.org/2000/svg"><circle cx="12"
+ cy="12" r="10" stroke="#0070ba" stroke-width="2"><br>
+      <span style="font-size: 12px; color: rgb(85, 85, 85);">Trusted
+by Millions Globally </span></circle></svg></span><span
+ style="margin-right: 20px;"><svg width="30"
+ height="30" viewbox="0 0 24 24" fill="none"
+ xmlns="http://www.w3.org/2000/svg"><circle cx="12"
+ cy="12" r="10" stroke="#f7931a" stroke-width="2"
+ fill="white"><path
+ d="M14 10.5c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5H10v9h4c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5m0-3v-2m0 9v-2"
+ stroke="#f7931a" stroke-width="2" stroke-linecap="round"
+ stroke-linejoin="round"><line x1="13" y1="4"
+ x2="13" y2="7" stroke="#f7931a" stroke-width="2"
+ stroke-linecap="round"><br>
+      <span style="font-size: 12px; color: rgb(85, 85, 85);">Secure
+Crypto Transactions </span></line></path></circle></svg></span></td>
+    </tr>
+  </tbody>
+</table>
+<table
+ style="border: 1px solid rgb(221, 221, 221); background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 100%; font-family: Arial,sans-serif; border-collapse: collapse;">
+<!-- Table Header --> <tbody>
+    <tr
+ style="background: rgb(247, 247, 247) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: left;">
+      <th
+ style="border-bottom: 2px solid rgb(221, 221, 221); padding: 14px; font-size: 14px; color: rgb(51, 51, 51);">Cryptocurrency
+      </th>
+      <th
+ style="border-bottom: 2px solid rgb(221, 221, 221); padding: 14px; font-size: 14px; color: rgb(51, 51, 51);">&nbsp;
+&nbsp; &nbsp; &nbsp; Amount </th>
+      <th
+ style="border-bottom: 2px solid rgb(221, 221, 221); padding: 14px; font-size: 14px; color: rgb(51, 51, 51); text-align: center;">Wallet
+Address </th>
+      <th
+ style="border-bottom: 2px solid rgb(221, 221, 221); padding: 14px; font-size: 14px; color: rgb(51, 51, 51); text-align: center;">USD
+Value </th>
+    </tr>
+<!-- Bitcoin Purchase Row --> <tr>
+      <td
+ style="border-bottom: 1px solid rgb(221, 221, 221); padding: 16px; vertical-align: middle;">
+      <table
+ style="border-collapse: collapse; width: 336px; height: 116px;">
+        <tbody>
+          <tr>
+            <td style="padding-right: 12px; vertical-align: middle;">
+            <img style="max-width: 40px;"
+ src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg"
+ alt="Bitcoin Logo"></td>
+            <td style="vertical-align: middle;"> <strong
+ style="font-size: 16px; color: rgb(51, 51, 51);">Bitcoin
+(BTC)</strong><br>
+            <span style="font-size: 14px; color: rgb(85, 85, 85);">Transaction
+via TRX Crypto </span><br>
+            <br>
+            <span style="font-size: 14px; color: rgb(51, 51, 51);">
+            <strong>Transaction ID:</strong></span>&nbsp;<span
+ style="font-size: 22px;"><strong>#p_key</strong></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+<!-- Wallet Address --> <td
+ style="border-bottom: 1px solid rgb(221, 221, 221); padding: 16px; font-size: 14px; color: rgb(85, 85, 85); vertical-align: middle;">$0.009
+BTC</td>
+<!-- BTC Amount --> <td
+ style="border-bottom: 1px solid rgb(221, 221, 221); padding: 16px; text-align: center; font-size: 14px; color: rgb(51, 51, 51); vertical-align: middle;">#tr_no<span
+ style="font-size: 22px;"><strong></strong></span></td>
+<!-- USD Price --> <td
+ style="border-bottom: 1px solid rgb(221, 221, 221); padding: 16px; text-align: center; font-size: 16px; font-weight: bold; color: rgb(51, 51, 51); vertical-align: middle;">$#high_amount.99
+      </td>
+    </tr>
+<!-- Support Section --> <tr>
+      <td colspan="4"
+ style="border-top: 2px solid rgb(221, 221, 221); padding: 16px; background: rgb(247, 247, 247) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: center; font-size: 14px; color: rgb(85, 85, 85);">Have
+questions about your transaction or wallet delivery? <br>
+      <strong style="color: rgb(0, 112, 186);">Contact our
+Support Team: <a href="#"
+ style="color: rgb(0, 28, 186); text-decoration: none;">+1
+#tf_no </a></strong></td>
+    </tr>
+  </tbody>
+</table>
+<table
+ style="border: 1px solid rgb(221, 221, 221); background: white none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-family: Arial,sans-serif; border-collapse: collapse; width: 100%;">
+<!-- Table Header --> <tbody>
+    <tr
+ style="background: rgb(247, 247, 247) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; text-align: left;">
+      <th colspan="2"
+ style="border-bottom: 2px solid rgb(221, 221, 221); padding: 14px; font-size: 16px; color: rgb(51, 51, 51);">Billing
+Summary </th>
+    </tr>
+<!-- Invoice Details --> <tr>
+      <td
+ style="border-bottom: 1px solid rgb(221, 221, 221); padding: 16px; font-size: 14px; color: rgb(85, 85, 85);">
+      <strong>Transaction Date:</strong>&nbsp;#day_date_td&nbsp;
+      </td>
+      <td
+ style="border-bottom: 1px solid rgb(221, 221, 221); padding: 16px; text-align: right; font-size: 16px; font-weight: bold; color: rgb(51, 51, 51);">Total
+Charged: <span style="color: rgb(0, 0, 0);">$#high_amount.99
+USD</span> </td>
+    </tr>
+<!-- Billing Brief --> <tr>
+      <td colspan="2"
+ style="padding: 16px; font-size: 14px; color: rgb(51, 51, 51);">Thank
+you for purchasing cryptocurrency using TRX Your Bitcoin (BTC) has
+been successfully transferred to the provided wallet address. <span
+ style="color: rgb(230, 57, 70); font-weight: bold;">For
+refund inquiries or transaction-related support, </span>please
+contact our crypto service team. </td>
+    </tr>
+<!-- Customer Support Button --> <tr>
+      <td colspan="2"
+ style="padding: 16px; text-align: center;"> <a href="#"
+ style="padding: 14px 28px; background: rgb(0, 112, 186) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; color: white; text-decoration: none; font-size: 20px; font-weight: bold;">+1
+#tf_no </a></td>
+    </tr>
+<!-- Trusted Security Icons --> <tr align="center">
+      <td colspan="2"
+ style="border-top: 1px solid rgb(221, 221, 221); padding: 16px; vertical-align: middle; text-align: left;">
+      <span style="margin: 0pt 10px;"><span
+ style="font-size: 12px; color: rgb(85, 85, 85);">Verified
+Crypto Transaction</span></span><span
+ style="margin: 0pt 10px;"><svg width="40"
+ height="40" viewbox="0 0 24 24" fill="none"
+ xmlns="http://www.w3.org/2000/svg"></svg></span><br>
+      <span style="margin: 0pt 10px;"></span><br>
+      <span style="margin: 0pt 10px;"><span
+ style="font-size: 12px; color: rgb(85, 85, 85);">&nbsp;End-to-End
+Encryption</span></span><span style="margin: 0pt 10px;"><svg
+ width="40" height="40" viewbox="0 0 24 24"
+ fill="none" xmlns="http://www.w3.org/2000/svg"></svg></span><br>
+      <span style="margin: 0pt 10px;"></span><br>
+      <span style="margin: 0pt 10px;"><span
+ style="font-size: 12px; color: rgb(85, 85, 85);">Fraud
+Protection Coverage</span></span><span
+ style="margin: 0pt 10px;"><span
+ style="font-size: 12px; color: rgb(85, 85, 85);"></span></span></td>
+    </tr>
+<!-- Footer --> <tr align="center">
+      <td colspan="2"
+ style="border-top: 1px solid rgb(221, 221, 221); padding: 14px; font-size: 12px; color: rgb(119, 119, 119); text-align: left;">&copy;
+2025 TRX Holdings, Inc. All rights reserved. TRX and
+the TRX logo are trademarks of TRX, Inc.<br>
+      <br>
+This is an automated email&mdash;please do not reply directly. </td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </body>
 </html>
