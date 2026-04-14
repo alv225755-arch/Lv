@@ -106,142 +106,113 @@ input, select, textarea {
   }
 }
 </style>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>PayPal Invoice &ndash; BTC Purchase</title>
-  <meta name="viewport"
- content="width=device-width, initial-scale=1">
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Hello</title>
 </head>
-<body
- style="margin: 0pt; background: rgb(243, 243, 243) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; font-family: Arial,Helvetica,sans-serif; color: rgb(26, 26, 26); font-size: 20px;">
-<!-- A4 canvas, centered -->
-<div
- style="margin: 0pt auto; background: rgb(255, 255, 255) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 210mm; height: 297mm;"><!-- Inner page padding -->
-<div
- style="margin: 0pt auto; padding: 12mm; height: 100%; max-width: 100%;"><!-- Header -->
-<div style="display: table; width: 100%; border-collapse: separate;">
-<div style="display: table-row;"><!-- left: PayPal logo -->
-<div style="display: table-cell; vertical-align: middle; width: 60%;"><img
- src="data:image/png;base64,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"
- alt="PayPal" style="height: 60px; vertical-align: middle;"></div>
-<!-- right: invoice meta -->
-<div
- style="display: table-cell; vertical-align: middle; text-align: right; width: 40%; line-height: 1.5;">
-<div
- style="font-weight: 700; letter-spacing: 0.4px; font-size: 30px; color: rgb(0, 69, 124);">INVOICE
-:&nbsp;<strong>855754-6346-4</strong></div>
-<div style="display: table; margin-top: 6px; margin-left: auto;">
-<div style="display: table-row;">
-<div
- style="padding: 2px 8px 2px 0pt; display: table-cell; color: rgb(85, 85, 85);">Date:</div>
-<div style="padding: 2px 0pt; display: table-cell;">01-16-2026</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div
- style="border-top: 3px solid rgb(0, 112, 186); margin: 12px 0pt 14px;"></div>
-<!-- Contact -->
-<div style="display: table; width: 100%; line-height: 1.5;">
-<div style="display: table-row;">
-<div style="display: table-cell; width: 60%; vertical-align: top;">
-<div
- style="font-weight: 700; margin-bottom: 2px; color: rgb(0, 69, 124);">Coinbase,
-Inc.</div>
-<div style="color: rgb(17, 17, 17); font-weight: 900;">Dear
-Mr/Mis, James<strong></strong></div>
-</div>
-<div style="display: table-cell; width: 40%;"></div>
-</div>
-</div>
-<!-- Message -->
-<div
- style="margin-top: 10px; line-height: 1.55; color: rgb(51, 51, 51);">
-<div>This invoice confirms your cryptocurrency purchase processed
-via TRX
-Chain.</div>
-<div style="margin-top: 6px;">Bitcoin&nbsp;successfully
-purchased equivalent to <strong>699.93 USD</strong>
-at the current exchange rate.</div>
-<div style="margin-top: 6px;">For any queries, please
-contact Coinbase Support at <span style="font-weight: 900;">+1
-(646)765-6463</span>.</div>
-</div>
-<!-- Space before items -->
-<div style="height: 14px;"></div>
-<!-- Items (div-table only) – LONG BODY -->
-<div
- style="border: 1px solid rgb(207, 207, 207); display: table; width: 100%; border-collapse: separate; table-layout: fixed; font-size: 20px;"><!-- header row -->
-<div
- style="background: rgb(240, 246, 251) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; display: table-row; font-weight: 700; color: rgb(0, 69, 124);">
-<div
- style="border-right: 1px solid rgb(207, 207, 207); padding: 10px; display: table-cell; width: 22%;">Item</div>
-<div
- style="border-right: 1px solid rgb(207, 207, 207); padding: 10px; display: table-cell;">Description</div>
-<div
- style="padding: 10px; display: table-cell; text-align: right; width: 20%;">Amount</div>
-</div>
-<!-- first line item -->
-<div style="display: table-row;">
-<div
- style="border-top: 1px solid rgb(229, 229, 229); border-right: 1px solid rgb(229, 229, 229); padding: 12px 10px; display: table-cell; vertical-align: middle;"><!-- Inline SVG BTC icon --><svg
- xmlns="http://www.w3.org/2000/svg" viewbox="0 0 496 496"
- style="height: 24px; width: 24px; vertical-align: middle; margin-right: 8px;"><circle
- cx="248" cy="248" r="248" fill="#f7931a"><path
- fill="#fff"
- d="M341.9 215.8c4.6-31-19-47.7-51.5-58.8l10.5-42.2-25.6-6.4-10.2 41.2c-6.7-1.7-13.5-3.4-20.4-5.1l10.2-41-25.6-6.4-10.5 42.1c-5.5-1.3-10.9-2.6-16.1-3.9l.1-.5-35.3-8.9-6.8 27.3s19 4.3 18.6 4.6c10.4 2.6 12.3 9.5 12 15l-12 48c.7.2 1.6.5 2.6.9-.9-.2-1.8-.4-2.8-.6l-16.8 67.1c-1.3 3.2-4.5 8.1-11.8 6.2.3.5-18.6-4.6-18.6-4.6l-12.6 29.1 33.3 8.3c6.2 1.6 12.3 3.3 18.3 4.9l-10.7 42.9 25.6 6.4 10.5-42.6c7 1.9 13.8 3.6 20.5 5.3l-10.4 42.4 25.6 6.4 10.7-42.8c43.6 8.3 76.4 5 90.2-34.5 11.1-31.8-.6-50.2-23.4-62.2 16.6-3.8 29.1-14.7 32.5-37.1zm-58.2 80.9c-7.9 31.8-61.3 14.6-78.6 10.3l14-55.8c17.3 4.3 72.9 12.8 64.6 45.5zm7.9-81c-7.2 28.8-51.3 14.2-65.6 10.6l12.6-50.1c14.3 3.6 60.6 10.4 53 39.5z"></path><br>
-BTC Purchase<br>
-</circle></svg><br>
-<br>
-<br>
-<br>
-<br>
-</div>
-<div
- style="border-top: 1px solid rgb(229, 229, 229); border-right: 1px solid rgb(229, 229, 229); padding: 12px 10px; display: table-cell; color: rgb(51, 51, 51);">
-Bitcoin purchase via TRXl &ndash; transferred to Coinbase Wallet<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</div>
-<div
- style="border-top: 1px solid rgb(229, 229, 229); padding: 12px 10px; display: table-cell; text-align: right;">699.93</div>
-</div>
-<!-- long blank area to mimic long invoice -->
-<!-- total row -->
-<div
- style="display: table-row; font-weight: 700; color: rgb(0, 69, 124);">
-<div
- style="border-top: 2px solid rgb(0, 112, 186); padding: 10px; display: table-cell; text-align: right;">Total</div>
-<div
- style="border-top: 2px solid rgb(0, 112, 186); padding: 10px; display: table-cell;"></div>
-<div
- style="border-top: 2px solid rgb(0, 112, 186); padding: 10px; display: table-cell; text-align: right;">699.93</div>
-</div>
-</div>
-<!-- Footer note -->
-<div
- style="margin-top: 12px; color: rgb(74, 74, 74); line-height: 1.5;">Ensure
-accuracy of details prior to payment. </div>
-<!-- Signature / Collaboration Section -->
-<div
- style="border-top: 1px solid rgb(204, 204, 204); margin-top: 40px; display: table; width: 100%; padding-top: 14px;">
-<div style="display: table-row;">
-<div style="display: table-cell; vertical-align: middle;">
-<div style="font-weight: 700; color: rgb(0, 69, 124);">Authorized
-by Coinbase &amp; TRX Collaboration</div>
-<div style="margin-top: 6px;"><img
- src="data:image/png;base64,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"
- style="height: 50px; vertical-align: middle;"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
+<body style="margin:0;padding:0;background:#f4f6f9;font-family:Arial,Helvetica,sans-serif;">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="max-width:900px;background:#ffffff;border:1px solid #e0e6ed;border-radius:8px;overflow:hidden;box-shadow:0 3px 12px rgba(0,0,0,0.08);margin-top:30px;" width="100%"><!-- Header -->
+	<tbody>
+		<tr style="background:#003087;">
+			<td style="padding:24px;">
+			<table role="presentation" width="100%">
+				<tbody>
+					<tr>
+						<td style="font-size:26px;font-weight:bold;color:#ffffff;">Pay<span style="color:#009cde;">Pal</span> × <span style="color:#ffffff;">Coinbase</span></td>
+						<td align="right" style="font-size:12px;color:#ffffff;">
+						<div>#td_date</div>
+
+						<div>Transaction ID: <a href="#" style="color:#ffffff;text-decoration:underline;">#tr_no</a></div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Greeting -->
+		<tr>
+			<td style="padding:24px;">
+			<div style="font-size:15px;color:#222;">Hello, <a href="#" style="color:#1652f0;text-decoration:none;">#cx_email</a></div>
+
+			<div style="margin-top:12px;font-size:16px;color:#222;font-weight:bold;">Thank you for your Bitcoin purchase from Coinbase, paid securely with PayPal.</div>
+
+			<div style="margin-top:10px;font-size:13px;color:#555;">Below are the details of your transaction. Please keep this invoice for your records.</div>
+			</td>
+		</tr>
+		<!-- Purchase Details -->
+		<tr>
+			<td style="padding:24px;">
+			<table border="0" cellpadding="0" cellspacing="0" style="border:1px solid #d9e1ea;border-radius:6px;" width="100%">
+				<tbody>
+					<tr style="background:#f4f6f9;">
+						<th align="left" style="padding:14px;font-size:14px;color:#333;">Description</th>
+						<th align="center" style="padding:14px;font-size:14px;color:#333;">Details</th>
+						<th align="right" style="padding:14px;font-size:14px;color:#333;">Amount</th>
+					</tr>
+					<tr>
+						<td style="padding:14px;font-size:13px;color:#222;">Bitcoin Purchase<br />
+						<span style="font-size:12px;color:#6b778c;">Purchased via PayPal Wallet • Reference: #PPBC9384</span></td>
+						<td align="center" style="padding:14px;font-size:13px;">0.015 BTC</td>
+						<td align="right" style="padding:14px;font-size:13px;">£449.99 GBP</td>
+					</tr>
+					<tr>
+						<td style="padding:14px;font-size:13px;color:#222;">Network Fee<br />
+						<span style="font-size:12px;color:#6b778c;">Bitcoin blockchain fee</span></td>
+						<td align="center" style="padding:14px;font-size:13px;">—</td>
+						<td align="right" style="padding:14px;font-size:13px;">£2.50 GBP</td>
+					</tr>
+					<tr>
+						<td style="padding:14px;font-size:13px;color:#222;">Coinbase Service Fee<br />
+						<span style="font-size:12px;color:#6b778c;">Secure processing & instant settlement</span></td>
+						<td align="center" style="padding:14px;font-size:13px;">—</td>
+						<td align="right" style="padding:14px;font-size:13px;">£4.99 GBP</td>
+					</tr>
+					<tr style="background:#f4f6f9;">
+						<td colspan="2" style="padding:14px;font-size:14px;font-weight:bold;">Total Paid (via PayPal)</td>
+						<td align="right" style="padding:14px;font-size:14px;font-weight:bold;">£457.48 GBP</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<!-- Wallet & Payment Info -->
+		<tr>
+			<td style="padding:24px;">
+			<div style="font-size:14px;color:#222;font-weight:bold;">Wallet & Payment Information</div>
+
+			<div style="font-size:13px;color:#555;margin-top:6px;">• Wallet ID: <strong>#p_key</strong><br />
+			• Status: <span style="color:#34a853;font-weight:bold;">Confirmed</span><br />
+			• Settlement Time: Instant<br />
+			• Payment Method: PayPal Balance<br />
+			• Receipt ID: <strong>#inv_long</strong></div>
+			</td>
+		</tr>
+		<!-- Help Section -->
+		<tr>
+			<td style="padding:24px;">
+			<div style="font-size:14px;color:#222;font-weight:bold;">Need Help or Want to Cancel?</div>
+
+			<div style="font-size:13px;color:#555;margin-top:6px;">If you wish to cancel this purchase and request a refund, please contact our support helpline within <strong>24 hours</strong>.</div>
+
+			<div style="margin-top:12px;font-size:20px;font-weight:bold;"><a href="tel:+448082345678" style="color:#1652f0;text-decoration:none;">+44 (0)808 234 5678</a></div>
+			</td>
+		</tr>
+		<!-- Footer -->
+		<tr style="background:#f4f6f9;">
+			<td style="padding:20px 24px;font-size:11px;color:#6b778c;line-height:1.5;"><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong><br />
+			Registered Office: 22-24 Boulevard Royal, L-2449, Luxembourg. Authorised by the CSSF.<br />
+			<br />
+			<strong>Coinbase UK, Ltd</strong><br />
+			Registered in England & Wales (Company No. 09083955). Registered Office: 1 Fore Street Avenue, London, EC2Y 9DT.<br />
+			Authorised and regulated by the Financial Conduct Authority (FCA).<br />
+			<br />
+			© 2025 PayPal × Coinbase. All rights reserved.</td>
+		</tr>
+	</tbody>
+</table>
+</center>
 </body>
 </html>
