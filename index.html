@@ -1,105 +1,112 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
-body {
+/* RESET */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  min-height: 100vh;
-body {
-  margin: 0;
-  padding: 20px;
-  background: #f2f2f2; /* light grey like your design */
-  font-family: Arial, sans-serif;
-} /* full screen background */
 }
 
-/* main content box */
-.main-box {
-  width: 95%;
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+/* MAIN CONTAINER */
+.wrapper {
+  width: 100%;
   max-width: 900px;
-  background: white;
+  margin: auto;
+  background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+  overflow: hidden;
 }
 
-/* make table responsive */
-table {
+/* TEXT HANDLING (important for long content) */
+p, h1, h2, h3, h4, h5, h6, span, div {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* TABLE FIX (very important) */
+.table-container {
   width: 100%;
   overflow-x: auto;
-}
-
-/* mobile fix */
-@media max-width: 900px;
-width: 100% {
-  .main-box {
-    padding: 15px;
-  }
-}
-
-wrapper {
-  width: 100%;
-  max-width: 900px;
-  margin: auto; /* center */
-  background: white;
-  padding: 25px;
-  border: 1px solid #ddd;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
+  min-width: 600px; /* prevents squishing */
 }
 
-@media (max-width: 600px) {
-  table {
-    display: block;
-    overflow-x: auto;
-  }
-}
-
-html {
-  -webkit-text-size-adjust: 100%;
-}
-
-body {
-  zoom: 1;
-}
-
-input, select, textarea {
-  font-size: 16px;
-}
-
-max-width: 900px;
-width: 100%;
-margin: auto;
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
+th, td {
   padding: 10px;
-  background: #f2f2f2;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
 }
 
+/* IMAGES */
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
-html {
+/* INPUTS */
+input, select, textarea {
+  width: 100%;
   font-size: 16px;
-  -webkit-text-size-adjust: 100%;
+  padding: 8px;
 }
 
+/* FLEX (for layout like invoice header) */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.flex > div {
+  flex: 1 1 250px;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  body {
+    padding: 5px;
+  }
+
+  .wrapper {
+    padding: 15px;
+  }
+
+  table {
+    min-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    padding: 10px;
+  }
+}
 </style>
 
-
-<body>
-
-<div class="wrapper">
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -280,7 +287,3 @@ physical signature. <br>
 </table>
 </body>
 </html>
-
-
-</div>
-</body>
